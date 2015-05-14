@@ -22,9 +22,9 @@ h1{ float: left; line-height: 40px; text-align: center; margin: 0 30px;}
 #query:focus{ outline: none;}
 #submit{ position: absolute; right: 10px; top: 5px;}
 #clock{  
-	margin: 0px 50px;
+	margin: 0px 20px;
   	display: inline-block;
-  	background: rgba(172, 8, 9, 0.3);
+  	background: #333;
   	border: none;
   	border-radius: 20px;
   	padding: 10px;
