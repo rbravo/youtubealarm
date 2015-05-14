@@ -103,3 +103,7 @@ footer .fblike {    width: 450px;
 :-moz-placeholder{ color: #df1f1f;}
 ::-moz-placeholder{ color: #df1f1f;}
 :-ms-input-placeholder{ color: #df1f1f;}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
