@@ -177,7 +177,7 @@ Version: 1.2.2 (03/09/2009 22:39:06)
                                 writeBuffer();
                                 var next = seekNext(p);
                                 $(this).caret(next);
-                                if (settings.completed && next == len)
+                                if (settings.completed && next >= len)
                                     settings.completed.call(input);
                             }
                         }
