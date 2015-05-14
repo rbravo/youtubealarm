@@ -17,12 +17,13 @@ h1 strong, #playlist, .video-title{ font-family: 'Montserrat', Arial, sans-serif
 
 header{ background: #df1f1f; color: white; height: 40px; padding: 20px 0;}
 h1{ float: left; line-height: 40px; text-align: center; margin: 0 30px;}
-#search{ float: left; height: 40px; position: relative; width: 480px;}
-#query{ background: #ac0809; border: none; border-radius: 20px; color: white; float: left; height: 30px; line-height: 30px; padding: 5px 20px; width: 440px;}
+#search{ float: left; height: 40px; position: relative; width: 310px;}
+#query{ background: #ac0809; border: none; border-radius: 20px; color: white; float: left; height: 30px; line-height: 30px; padding: 5px 20px; width: 270px;}
 #query:focus{ outline: none;}
 #submit{ position: absolute; right: 10px; top: 5px;}
 #clock{  
-	margin: 0px 20px;
+	margin: 0px;
+  margin-right: 20px;
   	display: inline-block;
   	background: #333;
   	border: none;
@@ -33,11 +34,11 @@ h1{ float: left; line-height: 40px; text-align: center; margin: 0 30px;}
   	float: right;
 }
 #alarm{  
-	margin: 0px 30px;
+	margin: 0px 20px;
   	display: inline-block;
   	}
   	#alarm input {
-  		margin-left: 35px;
+  		margin-left: 15px;
 	  		background: #ac0809;
 		  border: none;
 		  border-radius: 20px;

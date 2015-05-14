@@ -202,7 +202,7 @@ app.controller('VideosController', function ($scope, $http, $log, VideosService,
       $log.info('Queued id:' + id + ' and title:' + title);
     };
 
-    $scope.alarmVideo = {id:0,title:' < choose video and set time >'};
+    $scope.alarmVideo = {id:0,title:''};
     $scope.setAlarm = function(id,title){
       $scope.alarmVideo = {id:id,title:title};
       $scope.launch($scope.alarmVideo.id,$scope.alarmVideo.title);
