@@ -208,6 +208,8 @@ app.controller('VideosController', function ($scope, $http, $log, VideosService,
     $scope.setAlarm = function(id,title){
       $scope.alarmVideo = {id:id,title:title};
       $scope.launch($scope.alarmVideo.id,$scope.alarmVideo.title);
+      $('#comm').html('<div class="fb-comments" data-href="http://www.facebook.com/pages/YouTubeAlarmcom/127694740628844" data-numposts="20" height="100%" width="100%" data-colorscheme="dark"></div>');
+      FB.XFBML.parse();
     }
 
     $scope.delete = function (list, id) {
