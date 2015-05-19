@@ -117,7 +117,9 @@ app.service('VideosService', ['$window', '$rootScope', '$log', function ($window
   this.playNext = function(){
     service.launchPlayer(upcoming[0].id, upcoming[0].title);
   }
-
+  this.playNow = function(){
+    youtube.player.playVideo();
+  }
   this.listResults = function (data) {
     results.length = 0;
     for (var i = data.items.length - 1; i >= 0; i--) {
@@ -211,8 +213,9 @@ app.controller('VideosController', function ($scope, $http, $log, VideosService,
     $scope.delete = function (list, id) {
       VideosService.deleteVideo(list, id);
     };
-
+    $scope.searched = 0;
     $scope.search = function () {
+      $scope.searched++;
       $http.get('https://www.googleapis.com/youtube/v3/search', {
         params: {
           key: 'AIzaSyBovJr5nTkFM-Njwa4Avbg8h0snO0ioFXY',
@@ -253,7 +256,8 @@ app.controller('VideosController', function ($scope, $http, $log, VideosService,
         
         var timeAlarm = $scope.alarm;
         if(timeAlarm == h+":"+m+":"+s){
-          $scope.launch($scope.alarmVideo.id,$scope.alarmVideo.title);
+          //$scope.launch($scope.alarmVideo.id,$scope.alarmVideo.title);
+          VideosService.playNow();
         }
       }
       
